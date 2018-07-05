@@ -1,0 +1,87 @@
+<html>
+
+<head>
+
+<script type="text/javascript"  src="rs.speech.js">
+</script>
+<script type="text/javascript">
+	
+var msg = new SpeechSynthesisUtterance('It is people who count, not the disability.');
+var msg1=new SpeechSynthesisUtterance('Community Based Rehabilitation');
+
+var msg2=new SpeechSynthesisUtterance("Our mission of sharing information and reaching out where services are not available for persons with disabilities is fulfilled through the community based rehabilitation programme. The first initiative was as an outreach programme of Vidya Sagar in Arcot district in Tamil Nadu. Today it is an independent organization with its own trained staff.NGOs working in other developmental areas approached us for technical support in the management of disability. The Community Based Rehabilitation programmes began as a result of these needs.This programme focuses on capacity building in partner organizations in rural, semi urban areas and slum communities. Grassroots workers are trained to work with the persons with disabilities. Depending on the needs of the organization, specific partnership details are planned, worked out and evaluated together by both organizations in terms of objectives, time, and modality.");
+var msg3=new SpeechSynthesisUtterance("The objective, typically, is for the organization to become self-sufficient over a period of time, in working with people with disabilities. It is also the aim of the programme to build a perspective to disability in the community.In 2003, work with mentally ill persons in the rural areas was started through the CBR network, in partnership with Basic Needs India, ADD India and its CBR network partners. This project seeks to meet the needs of people with mental illnesses with active participation of community workers.");
+var msg4=new SpeechSynthesisUtterance('The programme:');
+var msg5=new SpeechSynthesisUtterance('This programme has resulted in the empowerment of CBR workers. They have been able to reach the unreached in remote pockets in districts of Tamil Nadu and others states.');
+	
+window.onload = function(){
+		
+document.getElementById("id5").onclick = function(){
+		
+window.speechSynthesis.speak(msg);
+
+window.speechSynthesis.speak(msg1);
+	
+window.speechSynthesis.speak(msg2);
+
+window.speechSynthesis.speak(msg3);
+
+window.speechSynthesis.speak(msg4);
+
+window.speechSynthesis.speak(msg5);
+
+
+
+
+}}
+ 
+ 
+</script>
+
+
+<style>
+html, body {
+    margin: 0;
+    height: 100%;
+}
+</style>
+
+</head>
+
+<body background="Untitled.jpg" id="id5">
+
+<p id="e">
+
+</p>
+
+<button id="speak">Speak</button>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<font face="Helvetica">
+<h3>Community Based Rehabilitation</h3>
+<hr>
+<p>
+<b>It is people who count, not the disability!</b>
+<br><br>
+Our mission of sharing information and reaching out where services are not available for persons with disabilities is fulfilled through the community based rehabilitation programme. The first initiative was as an outreach programme of Vidya Sagar in Arcot district in Tamil Nadu. Today it is an independent organization with its own trained staff.NGOs working in other developmental areas approached us for technical support in the management of disability. The Community Based Rehabilitation programmes began as a result of these needs.This programme focuses on capacity building in partner organizations in rural, semi urban areas and slum communities. Grassroots workers are trained to work with the persons with disabilities. Depending on the needs of the organization, specific partnership details are planned, worked out and evaluated together by both organizations in terms of objectives, time, and modality.
+</p><p>
+The objective, typically, is for the organization to become self-sufficient over a period of time, in working with people with disabilities. It is also the aim of the programme to build a perspective to disability in the community.In 2003, work with mentally ill persons in the rural areas was started through the CBR network, in partnership with Basic Needs India, ADD India and its CBR network partners. This project seeks to meet the needs of people with mental illnesses with active participation of community workers.
+</p><p>
+<h3>The programme:</h3>
+</p>
+<p>
+This programme has resulted in the empowerment of CBR workers. They have been able to reach the unreached in remote pockets in districts of Tamil Nadu and others states.
+</p>
+</body>
+
+</html>

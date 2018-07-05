@@ -1,0 +1,88 @@
+<html>
+
+<head>
+
+<meta http-equiv="refresh" content="60;projects.html" />
+
+<script type="text/javascript"  src="rs.speech.js">
+</script>
+<script type="text/javascript">
+	
+var msg = new SpeechSynthesisUtterance('It is people who count, not the disability.');
+var msg1=new SpeechSynthesisUtterance('Early Intervention-Unit');
+
+var msg2=new SpeechSynthesisUtterance("The Early Intervention Unit caters to the special needs of children from early infancy to six years.It was started in 1986. The program has just been revamped to meet the needs of children with cerebral palsy and low vision. A regular working day involves group services, physiotherapy, vision training, individual services, speech and communication and group play.");
+var msg3=new SpeechSynthesisUtterance('The EI program includes:');
+var msg4=new SpeechSynthesisUtterance("A regular visit to the dietician, for a proper diet program, A reading program,Toilet training for the children,Workshops for the parents on the children's condition, handling techniques, proper feeding, trunk control, and breathing exercises and Counselling sessions for the parents");
+	
+window.onload = function(){
+		
+document.getElementById("id5").onclick = function(){
+		
+window.speechSynthesis.speak(msg);
+
+window.speechSynthesis.speak(msg1);
+	
+window.speechSynthesis.speak(msg2);
+
+window.speechSynthesis.speak(msg3);
+
+window.speechSynthesis.speak(msg4);
+
+
+
+
+}}
+ 
+ 	
+
+</script>
+
+
+<style>
+html, body {
+    margin: 0;
+    height: 100%;
+}
+</style>
+</head>
+
+<body background="Untitled.jpg" id="id5">
+
+<p id="e">
+
+</p>
+
+<button id="speak">Speak</button>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<font face="Helvetica">
+<h3>Early Intervention-Unit</h3>
+<hr>
+<p>
+<b>It is people who count, not the disability!</b>
+<br><br>
+The Early Intervention Unit caters to the special needs of children from early infancy to six years.It was started in 1986. The program has just been revamped to meet the needs of children with cerebral palsy and low vision. A regular working day involves group services, physiotherapy, vision training, individual services, speech and communication and group play.
+</p><p>
+<h4>The EI program includes:</h4>
+</p><p>
+»    A regular visit to the dietician, for a proper diet program<br>
+»    A reading program<br>
+»    Toilet training for the children<br>
+»    Workshops for the parents on the children's condition, handling techniques, proper feeding, trunk control, and breathing exercises<br>
+»    Counselling sessions for the parents<br>
+
+</p>
+</body>
+
+</html>

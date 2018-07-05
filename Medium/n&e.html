@@ -1,0 +1,158 @@
+<html>
+<head>
+<title>NEWS&EVENTS</title>
+</head>
+<body id="id1" bgcolor="black">
+<a href=""></a>
+<audio id="myAudio">
+  <source src="news.mp3" type="audio/mpeg">
+</audio>
+<audio id="myAudio1">
+  <source src="Events.mp3" type="audio/mpeg">
+</audio>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+<script>
+
+function playAudio() { 
+var audio = document.getElementById("myAudio");
+audio.play();
+}
+function stopAudio() { 
+var audio = document.getElementById("myAudio");
+audio.pause();
+}
+function playAudio1() { 
+var audio = document.getElementById("myAudio1");
+audio.play();
+}
+function stopAudio1() { 
+var audio = document.getElementById("myAudio1");
+audio.pause();
+}
+  currentTabIndex = 1;
+
+  $('#id1').click(function(){     //THIS FUNCTION IS TO REDIRECT THE USER TO THE WEBSITES ON JUST CLICKING THE BODY OF THE WEBSITE
+
+  if(currentTabIndex==2)
+		window.location.href="news.html";
+
+  else if(currentTabIndex==3)
+		window.location.href="http://www.vidyasagar.co.in/en/events.php?id=3&Events";
+})
+
+$(document).ready(function() {
+  var totalTabIndexes = $("[tabindex]").length;
+  
+  console.log(totalTabIndexes);
+  
+  var arrayOfkeys = new Array();
+
+  //TO ALTERNATE THE BUTTONS ONE BY ONE WITH TIME DELAY
+
+  function focusCycle() {
+    if (currentTabIndex <= totalTabIndexes) {
+
+      $("[tabindex=" + currentTabIndex + "]").focus();
+	
+      currentTabIndex++;
+ 
+    } else {
+      currentTabIndex = 1;
+      $("[tabindex=" + currentTabIndex + "]").focus();
+      currentTabIndex++;
+    }
+  }
+
+  //start the cycle
+  var tabIndexTimer = setInterval(focusCycle, 5000);
+
+});
+</script>
+
+
+
+<style>
+html, body {
+    margin: 0;
+    height: 100%;
+}
+button {
+height: 32px;
+width: 150px;
+}
+u {
+background-color: #5ACAE6;
+}
+*:focus {
+outline: none;
+}
+input:focus {
+outline: #0099CC solid 2px;
+}
+button:focus{
+outline: #0a002b solid 10px;
+}
+a:focus {
+outline: #0099FF dotted 1px;
+}
+.b {
+    background-color: #f9f454;
+    border: 2px solid #E9967A;
+    color: black;
+    height: 70px;
+    width: 175px;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+     -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.b:hover {
+    background-color: blue; 
+    color: yellow;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+</style>
+
+
+<h1><img src="logo.jpg" align="left" height="100" width="100"></img><font color="#E610D9" face="Helvetica"><h1><center><u>NEWS AND EVENTS</u></center></font></u></h1>
+<p align="left"><font size="5"><pre> <q>It is people who count, not the disability...</q></pre></font></p>
+<br><br><br>
+<center>
+<table cellspacing="7" cellpadding="7" align="left">
+<tr>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td><a href="http://www.vidyasagar.co.in/en/news.php?id=3&News"><button tabindex="1" class="b" onfocus="playAudio(this)" onblur="stopAudio(this)"><font size="5" >NEWS</font></button></a></td>
+<td><a href="http://www.vidyasagar.co.in/en/events.php?id=3&Events"><button tabindex="2" class="b" onfocus="playAudio1(this)" onblur="stopAudio1(this)"><font size="5"> EVENTS</font></button></td>
+</tr>
+</table>
+</center>
+</body>
+</html>
