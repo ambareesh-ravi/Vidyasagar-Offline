@@ -1,0 +1,40 @@
+<html>
+
+<head>
+
+<script type="text/javascript"  src="rs.speech.js">
+</script>
+<script type="text/javascript">
+	
+var msg = new SpeechSynthesisUtterance('Hello World');
+	
+window.onload = function(){
+		
+document.getElementById("speak").onclick = function(){
+		
+window.speechSynthesis.speak(msg);
+	
+}
+}
+ 
+ 	
+
+</script>
+
+</head>
+
+<body>
+
+<p id="e">
+
+</p>
+
+<button id="speak">Speak</button>
+
+<button id="start">Start</button>
+
+<button id="stop">Stop</button>
+
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+<html>
+<head>
+<title>PROJECTS</title>
+</head>
+<body id="id1" bgcolor="black">
+<a href=""></a>
+<audio id="myAudio">
+  <source src="fbr.mp3" type="audio/mpeg">
+</audio>
+<audio id="myAudio1">
+  <source src="eiu.mp3" type="audio/mpeg">
+</audio>
+<audio id="myAudio2">
+  <source src="tcfse.mp3" type="audio/mpeg">
+</audio>
+<audio id="myAudio3">
+  <source src="adulp_1502115687227.mp3" type="audio/mpeg">
+</audio>
+<audio id="myAudio4">
+  <source src="t&vcentre_1502115685982.mp3" type="audio/mpeg">
+</audio>
+<audio id="myAudio5">
+  <source src="anacom.mp3" type="audio/mpeg">
+</audio>
+<audio id="myAudio6">
+  <source src="incell.mp3" type="audio/mpeg">
+</audio>
+<audio id="myAudio7">
+  <source src="cbr.mp3" type="audio/mpeg">
+</audio>
+<audio id="myAudio8">
+  <source src="tt.mp3" type="audio/mpeg">
+</audio>
+<audio id="myAudio9">
+  <source src="dlunit.mp3" type="audio/mpeg">
+</audio>
+<audio id="myAudio10">
+  <source src="Home.mp3" type="audio/mpeg">
+</audio>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+<script>
+function playAudio() { 
+var audio = document.getElementById("myAudio");
+audio.play();
+}
+function stopAudio() { 
+var audio = document.getElementById("myAudio");
+audio.pause();
+}
+function playAudio1() { 
+var audio = document.getElementById("myAudio1");
+audio.play();
+}
+function stopAudio1() { 
+var audio = document.getElementById("myAudio1");
+audio.pause();
+}
+function playAudio2() { 
+var audio = document.getElementById("myAudio2");
+audio.play();
+}
+function stopAudio2() { 
+var audio = document.getElementById("myAudio2");
+audio.pause();
+}
+function playAudio3() { 
+var audio = document.getElementById("myAudio3");
+audio.play();
+}
+function stopAudio3() { 
+var audio = document.getElementById("myAudio3");
+audio.pause();
+}
+function playAudio4() { 
+var audio = document.getElementById("myAudio4");
+audio.play();
+}
+function stopAudio4() { 
+var audio = document.getElementById("myAudio4");
+audio.pause();
+}
+function playAudio5() { 
+var audio = document.getElementById("myAudio5");
+audio.play();
+}
+function stopAudio5() { 
+var audio = document.getElementById("myAudio5");
+audio.pause();
+}
+function playAudio6() { 
+var audio = document.getElementById("myAudio6");
+audio.play();
+}
+function stopAudio6() { 
+var audio = document.getElementById("myAudio6");
+audio.pause();
+}
+function playAudio7() { 
+var audio = document.getElementById("myAudio7");
+audio.play();
+}
+function stopAudio7() { 
+var audio = document.getElementById("myAudio7");
+audio.pause();
+}
+function playAudio8() { 
+var audio = document.getElementById("myAudio8");
+audio.play();
+}
+function stopAudio8() { 
+var audio = document.getElementById("myAudio8");
+audio.pause();
+}
+function playAudio9() { 
+var audio = document.getElementById("myAudio9");
+audio.play();
+}
+function stopAudio9() { 
+var audio = document.getElementById("myAudio9");
+audio.pause();
+}
+function playAudio10() { 
+var audio = document.getElementById("myAudio10");
+audio.play();
+}
+function stopAudio10() { 
+var audio = document.getElementById("myAudio10");
+audio.pause();
+}
+currentTabIndex = 1;
+
+  $('#id1').click(function(){     //THIS FUNCTION IS TO REDIRECT THE USER TO THE WEBSITES ON JUST CLICKING THE BODY OF THE WEBSITE
+
+  if(currentTabIndex==2)
+		window.location.href="pfbr.html";
+
+  else if(currentTabIndex==3)
+		window.location.href="peiunit.html";
+
+  else if(currentTabIndex==4)
+		window.location.href="ptcfse.html";
+
+  else if(currentTabIndex==5)
+		window.location.href="padltprgm.html";
+
+  else if(currentTabIndex==6)
+		window.location.href="pt&vc.html";
+
+  else if(currentTabIndex==7)
+		window.location.href="pa&a.html";
+
+  else if(currentTabIndex==8)
+		window.location.href="pincell.html";
+  
+
+  else if(currentTabIndex==9)
+		window.location.href="pcbr.html";
+
+  else if(currentTabIndex==10)
+		window.location.href="ptt.html";
+  
+  else if(currentTabIndex==11)
+		window.location.href="pdlu.html";
+ else if(currentTabIndex==12)
+		window.location.href="sai(2).html";
+		
+
+})
+
+$(document).ready(function() {
+  var totalTabIndexes = $("[tabindex]").length;
+  
+  console.log(totalTabIndexes);
+  
+  var arrayOfkeys = new Array();
+
+  //TO ALTERNATE THE BUTTONS ONE BY ONE WITH TIME DELAY
+
+  function focusCycle() {
+    if (currentTabIndex <= totalTabIndexes) {
+
+      $("[tabindex=" + currentTabIndex + "]").focus();
+	
+      currentTabIndex++;
+ 
+    } else {
+      currentTabIndex = 1;
+      $("[tabindex=" + currentTabIndex + "]").focus();
+      currentTabIndex++;
+    }
+  }
+
+  //start the cycle
+  var tabIndexTimer = setInterval(focusCycle, 4000);
+
+});
+</script>
+
+
+
+<style>
+html, body {
+    margin: 0;
+    height: 100%;
+}
+button {
+height: 50px;
+width: 150px;
+}
+u {
+background-color: #5ACAE6;
+}
+*:focus {
+outline: none;
+}
+input:focus {
+outline: #0099CC solid 2px;
+}
+button:focus{
+outline: #fcfcf9 solid 10px;
+}
+a:focus {
+outline: #0099FF dotted 1px;
+}
+.b {
+    background-color: #f9f454;
+    border: 2px solid #E9967A;
+    color: black;
+    height: 100px;
+    width: 190px;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+     -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.b:hover {
+    background-color: blue; 
+    color: yellow;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+</style>
+
+
+<h1><img src="logo.jpg" align="left" height="100" width="100"></img><center><font color="#E610D9" face="Helvetica"><h1>          <u>      PROJECTS</u></font></u></center></h1>
+<p align="left"><font size="5"><pre> <q>It is people who count, not the disability...</q></pre></font></p>
+<br><br><br>
+<center>
+
+
+
+<table cellspacing="7" cellpadding="7" align="left">
+<tr>
+
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td><a href="http://www.vidyasagar.co.in/en/family_based_rehabilitation.php?id=2&family%20based%20rehabitation"><button tabindex="1" class="b" onfocus="playAudio(this)" onblur="stopAudio(this)"><font size="5" >Family Based Rehabilitation</font></button></a></td>
+
+<td><a href="http://www.vidyasagar.co.in/en/early_intervention_unit.php?id=2&early%20intervention%20unit"><button tabindex="2" class="b" onfocus="playAudio1(this)" onblur="stopAudio1(this)"><font size="5"> Early Intervention-Unit</font></button></td>
+
+<td><a href="http://www.vidyasagar.co.in/en/the_centre_for_special_education.php?id=2&the%20centre%20for%20special%20education"><button tabindex="3" class="b" onfocus="playAudio2(this)" onblur="stopAudio2(this)"><font size="5">The Centre for Special Education</font></button></a></td>
+
+<td><button tabindex="4" onclick="window.location.href='http://www.vidyasagar.co.in/en/adult_program.php?id=2&adult%20program';" class="b" onfocus="playAudio3(this)" onblur="stopAudio3(this)"><font size="5">Adult Program</font></button></td>
+
+<td><button tabindex="5" onclick="window.location.href='http://www.vidyasagar.co.in/en/therapy_and_vision_centre.php?id=2&therapy%20and%20vision%20centre';" class="b" onfocus="playAudio4(this)" onblur="stopAudio4(this)"><font size="5">Therapy and Vision Centre</font></button></td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td><button tabindex="6" onclick="window.location.href='http://www.vidyasagar.co.in/en/augmentative_and_alternative_communication.php?id=2&augmentative%20and%20alternative%20communication';" class="b" onfocus="playAudio5(this)" onblur="stopAudio5(this)"><font size="5">Augmentative and Alternative Communication</font></button></td>
+
+<td><button tabindex="7" onclick="window.location.href='http://www.vidyasagar.co.in/en/inclusion_cell.php?id=2&inclusion%20cell';" class="b" onfocus="playAudio6(this)" onblur="stopAudio6(this)"><font size="5">Inclusion Cell</font></button></td>
+
+<td><button tabindex="8" onclick="window.location.href='http://www.vidyasagar.co.in/en/community_based_rehabilitation.php?id=2&community%20based%20rehabilitation';" class="b" onfocus="playAudio7(this)" onblur="stopAudio7(this)"><font size="5">Community Based Rehabilitation</font></button></td>
+
+<td><button tabindex="9" onclick="window.location.href='http://www.vidyasagar.co.in/en/technical_training.php?id=2&technical%20training';" class="b" onfocus="playAudio8(this)" onblur="stopAudio8(this)"><font size="5">Technical Training</font></button></td>
+
+<td><button tabindex="10" onclick="window.location.href='http://www.vidyasagar.co.in/en/disability_legislation_unit.php?id=2&disability%20legislation%20unit';" class="b" onfocus="playAudio9(this)" onblur="stopAudio9(this)"><font size="5">Disability Legislation Unit</font></button></td>
+</tr>
+
+
+</table>
+<button tabindex="11" class="b" onfocus="playAudio10(this)" onblur="stopAudio10(this)"><font size="5">HOME</font></button></td>
+</center>
+</body>
+</html>
