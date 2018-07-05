@@ -1,0 +1,38 @@
+<html>
+<head>
+<script type="text/javascript" src="rs.speak.js"></script>
+<script type="text/javascript">
+
+	document.getElementById("speak").onclick = function(){
+	speechRs.speechinit('Google UK English Female',function(e){
+		  speechRs.speak("Heyy how its going", function() {
+
+			}, false);
+	 });
+}
+ 
+ document.getElementById("start").onclick = function(){
+    speechRs.rec_start('en-IN',function(final_transcript,interim_transcript){
+        document.getElementById("e").innerHTML=final_transcript+interim_transcript;
+    });
+	 
+	 speechRs.on("I am fine",function(){ 
+      alert("user spoken I am fine");
+    }); 
+	
+ }
+ 
+ document.getElementById("stop").onclick = function(){
+    speechRs.rec_stop();
+ }
+</script>
+</head>
+<body>
+<p id="e">
+
+</p>
+<button id="speak">Speak</button>
+<button id="start">Start</button>
+<button id="stop">Stop</button>
+</body>
+</html>

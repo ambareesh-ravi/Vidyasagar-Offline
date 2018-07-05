@@ -1,0 +1,5 @@
+https://github.com/kripken/speak.js/
+https://www.youtube.com/watch?v=BmdZtjxFFlQ
+https://github.com/Manohar-Gunturu/rs.speech.js
+https://jsfiddle.net/esk9xee3/10/
+https://stackoverflow.com/questions/13739568/how-do-i-link-a-javascript-file-to-a-html-file

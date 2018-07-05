@@ -1,0 +1,79 @@
+<html>
+
+<head>
+
+<script type="text/javascript"  src="rs.speech.js">
+</script>
+<script type="text/javascript">
+	
+var msg = new SpeechSynthesisUtterance('It is people who count, not the disability.');
+var msg1=new SpeechSynthesisUtterance('The Spastics Society of India was born in March 1985 in a garage in Chennai. It was started by Mrs. Poonam Natarajan, the mother of a child with profound disability, since there were no services available for this group. It was renamed ‘Vidya Sagar’ in 1998.Today Vidya Sagar is housed in a building that is designed in a manner that is totally barrier-free, and accessible to persons with disabilities, on land leased by the Government of Tamil Nadu and with community support.');
+
+var msg2=new SpeechSynthesisUtterance('Mrs Natarajan who had equipped herself with training in special education started the services with three students and three staff members. The parent training programme under Home Management, was our first project in 1985. Its objectives are to work on strategies that will empower parents of children with neurological impairments to include their children within their homes and support their inclusion in the community.');
+var msg3=new SpeechSynthesisUtterance('Vidya Sagar today runs several programmes reaching out to over 3800 individuals with disabilities. This has been possible by setting up high quality delivery of services, focusing on early intervention, special education, physiotherapy, speech and communication therapy, vision training, occupational therapy, co-curricular activities, counselling, vocational training, exploring and creating employment opportunities and training of resource persons to work in the field of disability.');
+var msg4=new SpeechSynthesisUtterance('Vidya Sagar is a rights based organization, with emphasis on creating awareness in the community on issues related to disability and advocating rights for persons with disabilities.');
+	
+window.onload = function(){
+		
+document.getElementById("speak").onclick = function(){
+		
+window.speechSynthesis.speak(msg);
+
+window.speechSynthesis.speak(msg1);
+	
+window.speechSynthesis.speak(msg2);
+
+window.speechSynthesis.speak(msg3);
+
+window.speechSynthesis.speak(msg4);
+
+
+
+
+}}
+ 
+ 	
+
+</script>
+
+</head>
+
+<body background="Untitled.jpg">
+
+<p id="e">
+
+</p>
+
+<button id="speak">Speak</button>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<font face="Helvetica">
+<h3>Genesis</h3>
+<hr>
+<p>
+<b>It is people who count, not the disability!</b>
+<br><br>
+The Spastics Society of India was born in March 1985 in a garage in Chennai. It was started by Mrs. Poonam Natarajan, the mother of a child with profound disability, since there were no services available for this group. It was renamed ‘Vidya Sagar’ in 1998.
+</p><p>
+Today Vidya Sagar is housed in a building that is designed in a manner that is totally barrier-free, and accessible to persons with disabilities, on land leased by the Government of Tamil Nadu and with community support.
+</p><p>
+Mrs Natarajan who had equipped herself with training in special education started the services with three students and three staff members. The parent training programme under Home Management, was our first project in 1985. Its objectives are to work on strategies that will empower parents of children with neurological impairments to include their children within their homes and support their inclusion in the community.
+</p>
+<p>
+Vidya Sagar today runs several programmes reaching out to over 3800 individuals with disabilities. This has been possible by setting up high quality delivery of services, focusing on early intervention, special education, physiotherapy, speech and communication therapy, vision training, occupational therapy, co-curricular activities, counselling, vocational training, exploring and creating employment opportunities and training of resource persons to work in the field of disability.
+</p><p>
+Vidya Sagar is a rights based organization, with emphasis on creating awareness in the community on issues related to disability and advocating rights for persons with disabilities.
+</p>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<html>
+
+<head>
+
+<script type="text/javascript"  src="rs.speech.js">
+</script>
+<script type="text/javascript">
+	
+var msg = new SpeechSynthesisUtterance('It is people who count, not the disability.');
+var msg1=new SpeechSynthesisUtterance('Augmentative and Alternative Communication');
+
+var msg2=new SpeechSynthesisUtterance('Many of our students have speech and communication difficulties - but have a lot to communicate.');
+var msg3=new SpeechSynthesisUtterance('The Speech and Communication Department carries out assessments and trains students to use alternative and augmentativemodes of communication. The focus is on initiating communication and sustaining it. This department caters to around 450 individuals every year.');
+var msg4=new SpeechSynthesisUtterance('The department works closely with AnnaUniversity and the Indian Institute of Technology (IIT) to improve and upgrade the communication devices.As a resource center, the department provides hands-on training for organizations working with individuals with disabilities. The department has been training Interns from the Ramachandra Medical College on a regular basis.');
+	
+window.onload = function(){
+		
+document.getElementById("id5").onclick = function(){
+		
+window.speechSynthesis.speak(msg);
+
+window.speechSynthesis.speak(msg1);
+	
+window.speechSynthesis.speak(msg2);
+
+window.speechSynthesis.speak(msg3);
+
+window.speechSynthesis.speak(msg4);
+
+
+
+
+}}
+ 
+ 
+</script>
+
+
+<style>
+html, body {
+    margin: 0;
+    height: 100%;
+}
+</style>
+
+</head>
+
+<body background="Untitled.jpg" id="id5">
+
+<p id="e">
+
+</p>
+
+<button id="speak">Speak</button>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<font face="Helvetica">
+<h3>Augmentative and Alternative Communication</h3>
+<hr>
+<p>
+<b>It is people who count, not the disability!</b>
+<br><br>
+Many of our students have speech and communication difficulties - but have a lot to communicate.
+</p><p>
+The Speech and Communication Department carries out assessments and trains students to use alternative and augmentativemodes of communication. The focus is on initiating communication and sustaining it. This department caters to around 450 individuals every year.
+</p><p>
+The department works closely with AnnaUniversity and the Indian Institute of Technology (IIT) to improve and upgrade the communication devices.
+</p>
+<p>
+As a resource center, the department provides hands-on training for organizations working with individuals with disabilities. The department has been training Interns from the Ramachandra Medical College on a regular basis.
+</p>
+</body>
+
+</html>
